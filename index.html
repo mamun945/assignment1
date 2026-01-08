@@ -70,6 +70,106 @@
         font-weight: 500;
       }
 
+          
+    /* hero section */
+
+      .hero-section{
+        background-image: url('./assets/hero-bg.png');
+        height: 674px;
+        width: auto;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size:cover;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+     .hero-text-parent{
+        max-width: 1360px;
+        width: 90%;
+        margin:0 auto;
+        display: flex;
+        justify-content:center;
+     }
+    .inner-div{
+        max-width: 770px;
+        text-align: center;
+    }
+    .hero-divbtn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .inner-div .icon-btn{
+        padding: 8px 12px;
+        font-size: 16px;
+        font-weight:500;
+        border-radius: 100px;
+        color:#30B868;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border:none
+    }
+    .inner-div span{
+        display: inline-block;
+    }
+    .icon-btn .icon{
+        height: 16px;
+        width: 16px;
+        background-color: #30b8695b;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .icon-btn .icon::before{
+        content: '';
+        height:100%;
+        width: 100%;
+        position: absolute;
+        background-color:#30b8696c;
+        border-radius: 50%;
+        transform: scale(0.7);
+        left:0;
+        top: 0;
+    }
+
+    .icon-btn .icon::after{
+        content: '';
+        height:100%;
+        width: 100%;
+        position: absolute;
+        background-color:#30B868;
+        border-radius: 50%;
+        transform: scale(0.4);
+        left:0;
+        top: 0;
+    }
+
+ .inner-div h1{
+    font-size: 72px;
+    font-weight: 700;
+    margin:20px 0;
+    color:white;
+ }
+ .inner-div h1 p{
+    color: #30B868;
+ }
+
+ .inner-div .peragrap{
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 32px;
+ }
+     
+.hero-button button{
+  margin-right: 16px;
+}
+
+    
+
     </style>
   </head>
   <body>
@@ -87,7 +187,23 @@
             <button class="btn">Get Early Access</button>
         </div>
       </nav>
-
+    
+     <!-- hero banner section -->
+       <section class="hero-section">
+            <div class="hero-text-parent">
+                <div class="inner-div">
+                    <div class="hero-divbtn">
+                     <button class="icon-btn"><span class="icon"></span><span>Early Access Now Open</span></button>
+                    </div>
+                <h1>Structured thinking,<p>not just note-taking</p></h1>
+                <p class="peragrap"> A private space to store notes, links, and learning summaries — designed to help you think clearly, connect ideas, and turn learning into long-term knowledge.</p>
+                <div class="hero-button">
+                    <button class="btn">Start Building Your Vault</button>
+                    <button class="btn2">See How It Works</button>
+                </div>
+                </div>
+            </div>
+       </section>
      
     </header>
     <main>
