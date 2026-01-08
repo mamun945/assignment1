@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>my first assignment</h1>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        outline: none;
+      }
+      /* common style  */
+       .btn{
+        background-color:#30B868;
+        padding:12.5px 16px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight:600;
+        border:none;
+        color: rgba(255, 255, 255, 1);
+      }
+      .btn2{
+        background-color:transparent;
+        padding:12.5px 16px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight:600;
+        border:none;
+        color: rgba(255, 255, 255, 1);
+        border:1px solid rgba(255, 255, 255, 1);
+      }
+
+      /* main style */
+      body{
+        background-color:#fbfbfb;
+        font-family: "Inter", sans-serif;
+      }
+
+       /* navbar design section */
+
+      header nav{
+        max-width: 1360px;
+        width: 90%;
+        margin: 16px auto;
+      }
+      .navbar-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar-container img{
+        width: 139px;
+        height: auto;
+      }
+      .navbar-container .nav-manue{
+        display: flex;
+        gap:32px;
+      }
+      .nav-manue li a{
+        color:#000000;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+
+        <!-- navbar design section -->
+      <nav>
+        <div class="navbar-container">
+          <img src="./assets/logo-navbar.png" alt="logo"/>
+            <ul class="nav-manue">
+                <li><a href="#">Fatures</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Why It's Different</a></li>
+            </ul>
+            <button class="btn">Get Early Access</button>
+        </div>
+      </nav>
+
+     
+    </header>
+    <main>
+
+    </main>
+    <footer></footer>
+  </body>
 </html>
