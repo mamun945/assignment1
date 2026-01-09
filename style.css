@@ -1,0 +1,514 @@
+
+
+       * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        outline: none;
+      }
+      /*------------------------- common style------------------  */
+       .btn{
+        background-color:#30B868;
+        padding:12.5px 16px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight:600;
+        border:none;
+        color: rgba(255, 255, 255, 1);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap:10px;
+        cursor: pointer;
+        transition:all .5s ease;
+      }
+    .btn:hover{
+      background-color:orange;
+      color:black;
+    }
+    .btn img{
+      transition:transform .5s ease;
+    }
+    .btn:hover img{
+      transform: translateX(15px);
+    }
+      .btn2{
+        background-color:transparent;
+        padding:12.5px 16px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight:600;
+        border:none;
+        color: rgba(255, 255, 255, 1);
+        border:1px solid rgba(255, 255, 255, 1);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap:10px;
+        cursor: pointer;
+        transition:all .5s ease;
+      }
+
+      .btn2:hover{
+        background-color: white;
+        color:#30B868;
+        border:1px solid #30B868;
+      }
+      .btn2 i{
+        transition:transform .5s ease;
+      }
+      .btn2:hover i{
+        transform: rotate(180deg);
+      }
+
+      /*-------------- main style--------------------- */
+      body{
+        background-color:#fbfbfb;
+        font-family: "Inter", sans-serif;
+      }
+
+       /* ----------------------------------navbar design section--------------- */
+
+      header nav{
+        max-width: 1360px;
+        width: 90%;
+        margin: 16px auto;
+      }
+      .navbar-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar-container img{
+        width: 139px;
+        height: auto;
+      }
+      .navbar-container .nav-manue{
+        display: flex;
+        gap:32px;
+      }
+      .nav-manue li a{
+        color:#000000;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+          
+    /* ----------------------------------------hero section----------------- */
+
+      .hero-section{
+        background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('./assets/hero-bg.png');
+        height: 674px;
+        width: auto;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size:cover;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        transition:all 1s ease;
+      }
+     .hero-section:hover{
+      background-image: linear-gradient(90deg,rgba(15, 189, 137, 0.411),rgba(182, 11, 192, 0.279)),url('./assets/hero-bg.png');
+      background-position:top left;
+     }
+
+     .hero-text-parent{
+        max-width: 1360px;
+        width: 90%;
+        margin:0 auto;
+        display: flex;
+        justify-content:center;
+     }
+    .inner-div{
+        max-width: 770px;
+        text-align: center;
+    }
+    .hero-divbtn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .inner-div .icon-btn{
+        padding: 8px 12px;
+        font-size: 16px;
+        font-weight:500;
+        border-radius: 100px;
+        color:#30B868;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border:none;
+        cursor: pointer;
+    }
+    .inner-div span{
+        display: inline-block;
+    }
+    .icon-btn .icon{
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .icon .span1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #095a2b;
+    border-radius: 50%;
+    z-index: 100;
+    left: 0px;
+    top: 0px;
+    transform: scale(.3);
+}
+
+
+    .icon-btn .span2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #229e568f;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px;
+    z-index: 50;
+    transform: scale(.7);
+    }
+
+    .icon-btn .span3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  background-color: #1766383f;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px;
+      
+    }
+
+ .inner-div h1{
+    font-size: 72px;
+    font-weight: 700;
+    margin:20px 0;
+    color:white;
+ }
+ .inner-div h1 p{
+    color: #30B868;
+ }
+
+ .inner-div .peragrap{
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 32px;
+ }
+.hero-button{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:16px;
+  transition: all .5s ease;
+}   
+
+/* -----------------------------------hero hover section --------------*/
+.hero-section:hover .hero-heading{
+      color:#30B868;
+ }
+ .hero-section:hover .hero-heading p{
+  color: white;
+ }
+ .hero-section:hover .peragrap{
+  color:#30B868;
+ }
+ .icon-btn:hover {
+  background-color: #30B868;
+  color:white;
+ }
+
+ .icon-btn:hover .icon::after{
+  background-color: rgba(255, 166, 0, 0.39);
+ }
+ .icon-btn:hover .icon::before{
+  background-color: rgba(255, 166, 0, 0.548);
+ }
+
+ .icon-btn:hover .span1{
+  background-color:rgba(135, 92, 12, 0.943);
+
+ }
+ .icon-btn:hover .span2{
+  background-color:rgba(181, 123, 16, 0.482);
+
+ }
+ .icon-btn:hover .span3{
+  background-color:rgba(181, 123, 16, 0.295);
+
+ }
+
+ .hero-section:hover .hero-button{
+  gap:40px
+ }
+
+/* -----------------------------notes and card section---------------------- */
+
+.notesAndCard-section{
+  max-width: 1360px;
+  width: 90%;
+  margin:30px auto;
+}
+
+.notesAndCard-section .notesAndCard-section{
+  margin-bottom:44px;
+  width: 100%;
+}
+.notesAndCard-section .note-text{
+  text-align: center;
+}
+.note-text h2{
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.note-text p{
+  font-size: 16px;
+  color:#627382;
+}
+.note-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:24px;
+  margin-top: 44px;
+}
+.note-cards .card{
+  padding: 69.5px 24px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 300px;
+}
+
+.card .image-div{
+  display: flex;
+  justify-content: center;
+}
+
+.card .image-div img{
+  height: 32px;
+  width: 32px;
+  transition:transform 1s ease;
+}
+
+.card .image-div div{
+  height: 60px;
+  width: 60px;
+  background: rgba(249, 85, 85, 1);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.card h3{
+  font-size: 24px;
+  color:#001931;
+  margin:16px 0px;
+  text-align: center;
+}
+
+.card p{
+  font-size: 16px;
+  color:#627382;
+  text-align: center;
+}
+
+ /* -----------------notes and card hover section--------- */
+.cardimg{
+  transition:all 1s ease;
+}
+ .card:hover .cardimg{
+  background-color:#30B868;
+  transform: translateY(-50px);
+ }
+
+.card:hover {
+  box-shadow: 0px 0px 5px 1px rgba(6, 53, 207, 0.352);
+  background-color: #e9b50a98;
+}
+.card:hover .card-title{
+  color:#30B868;
+}
+/*--------------------------------- your second brain section------- */
+.second-knoledge-section{
+  max-width: 1360px;
+  width: 90%;
+  margin:120px auto;
+}
+.second-knoledge-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:50px;
+}
+.knowledge-image-section img{
+  width: 450px;
+  height: auto;
+  border-radius:5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.knowledge-text .inner-knowledge-text{
+  width: 600px;
+}
+
+.inner-knowledge-text .kn-title{
+  color:#30B868;
+  font-size:16px;
+}
+
+.inner-knowledge-text .kn-heading{
+  font-size:45px;
+  font-weight: bold;
+  margin:10px 0;
+}
+
+.inner-knowledge-text .kn-paragrap{
+  font-size: 16px;
+  line-height: 20px;
+  color:#627382;
+  width: 440px;
+  margin-bottom:20px;
+}
+
+.kn-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap:5px;
+}
+
+  /* ----------------------------------ready to think section------------ */
+.ready-clear-section{
+  max-width:1360px;
+  width: 90%;
+  margin:122px auto;
+  padding: 80px 40px;
+  background: rgba(247, 246, 242, 1);
+  border-radius: 10px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.ready-clear-section div{
+  width: 580px;
+}
+
+.ready-clear-section h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom:20px;
+}
+
+.ready-clear-section p{
+  text-align: center;
+  color:#627382;
+  font-size:16px;
+  line-height:24px;
+}
+.ready-clear-section button{
+  margin: 20px;
+}
+
+.redy-btn{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+/* ------------------ready to think hover section---------------- */
+.ready-clear-section:hover{
+   background:linear-gradient(90deg, rgba(5, 196, 66, 0.374),rgba(44, 6, 210, 0.443));
+}
+.ready-clear-section:hover .ready-heading{
+  color:#30B868;
+}
+
+/* ----------------------------------------footer section------------------- */
+footer{
+  background-color: rgba(0, 25, 49, 1);
+  color:white;
+  padding:120px 0 30px;
+}
+.footer-section{
+  max-width:1360px;
+  width: 90%;
+  margin:0 auto;
+}
+.inner-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right:50px;
+ 
+}
+.inner-section img{
+  width: 139px;
+  height: auto;
+}
+
+.social-link p{
+ font-size: 20px;
+ color:white;
+ margin-bottom:10px;
+}
+.icons span{
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  display: inline-block;
+  margin-left:8px;
+  position: relative;
+  z-index: 0;
+  border-radius: 50%;
+}
+.icons i{
+  position: absolute;
+  z-index: 10;
+  color:#001931;
+  left:5px;
+  top: 5px;
+ 
+}
+.facebook i{
+  left: 7px;
+  top: 5px;
+}
+.copy-right{
+  margin-top:80px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* ------------------------footer hover section---- */
+.icons span{
+  transition:all 1s ease;
+}
+
+.icons span:hover{
+  transform: translateY(50px);
+  cursor: pointer;
+}
+
+        
+
+
+
+
+ 
+
+
+    
