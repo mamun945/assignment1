@@ -241,8 +241,51 @@
 
 
 /* your second brain section */
+.second-knoledge-section{
+  max-width: 1360px;
+  width: 90%;
+  margin:120px auto;
+}
+.second-knoledge-parent{
+  display: flex;
+  align-items: center;
+  gap:60px;
+}
+.knowledge-image-section img{
+  width: 600px;
+  height: auto;
+  border-radius:5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+}
 
-    
+.knowledge-text .inner-knowledge-text{
+  width: 600px;
+}
+
+.inner-knowledge-text .kn-title{
+  color:#30B868;
+  font-size:16px;
+}
+
+.inner-knowledge-text .kn-heading{
+  font-size:48px;
+  font-weight: bold;
+  margin:20px 0;
+}
+
+.inner-knowledge-text .kn-paragrap{
+  font-size: 16px;
+  line-height: 20px;
+  color:#627382;
+  margin-bottom:40px;
+}
+
+.kn-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap:5px;
+}
 
     </style>
   </head>
@@ -325,6 +368,29 @@
           </div>
          </div>
        </section>
+
+        <!-- your second brain section -->
+        <section class="second-knoledge-section">
+          <div class="second-knoledge-parent">
+            <div class="knowledge-image-section">
+              <img src="./assets/knowledge.png" width="200px" alt="brain">
+            </div>
+            <div class="knowledge-text">
+               <div class="inner-knowledge-text">
+                 <p class="kn-title">THE SOLUTION</p>
+              <p class="kn-heading">Your second brain, structured by design.</p>
+              <P class="kn-paragrap">Personal Knowledge Vault isn't another note-taking app. zIt's a thinking environment where every note, link, and summarybecomes part of an interconnected web of understanding.</P>
+              <ul class="kn-list">
+                <li><img src="./assets/CheckCircle.png" alt="logo">Capture ideas with structure built-in from day one</li>
+                <li><img src="./assets/CheckCircle.png" alt="logo">Connect related concepts automatically as you write</li>
+                <li><img src="./assets/CheckCircle.png" alt="logo">Build lasting knowledge through reflection prompts</li>
+                <li><img src="./assets/CheckCircle.png" alt="logo">Find anything instantly with semantic search</li>
+              </ul>
+               </div>
+            </div>
+          </div>
+        </section>
+
     </main>
     <footer></footer>
   </body>
