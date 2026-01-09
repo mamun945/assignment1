@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4f7aa5bbf1.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="./style.css" /> -->
     <style>
       * {
@@ -26,6 +27,10 @@
         font-weight:600;
         border:none;
         color: rgba(255, 255, 255, 1);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap:10px;
       }
       .btn2{
         background-color:transparent;
@@ -36,6 +41,10 @@
         border:none;
         color: rgba(255, 255, 255, 1);
         border:1px solid rgba(255, 255, 255, 1);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap:10px;
       }
 
       /* main style */
@@ -163,7 +172,12 @@
     color: rgba(255, 255, 255, 1);
     margin-bottom: 32px;
  }
-     
+.hero-button{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}   
+
 .hero-button button{
   margin-right: 16px;
 }
@@ -245,7 +259,6 @@
   max-width: 1360px;
   width: 90%;
   margin:120px auto;
-  border: 1px solid black;
 }
 .second-knoledge-parent{
   display: flex;
@@ -270,9 +283,9 @@
 }
 
 .inner-knowledge-text .kn-heading{
-  font-size:48px;
+  font-size:45px;
   font-weight: bold;
-  margin:20px 0;
+  margin:10px 0;
 }
 
 .inner-knowledge-text .kn-paragrap{
@@ -280,16 +293,52 @@
   line-height: 20px;
   color:#627382;
   width: 440px;
-  margin-bottom:40px;
+  margin-bottom:20px;
 }
 
 .kn-list li {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   gap:5px;
 }
+.ready-clear-section{
+  max-width:1360px;
+  width: 90%;
+  margin:122px auto;
+  padding: 80px 40px;
+  background: rgba(247, 246, 242, 1);
+  border-radius: 10px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.ready-clear-section div{
+  width: 580px;
+}
 
+.ready-clear-section h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom:20px;
+}
+
+.ready-clear-section p{
+  text-align: center;
+  color:#627382;
+  font-size:16px;
+  line-height:24px;
+}
+.ready-clear-section button{
+  margin: 20px;
+}
+
+.redy-btn{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
     </style>
   </head>
   <body>
@@ -318,8 +367,8 @@
                 <h1>Structured thinking,<p>not just note-taking</p></h1>
                 <p class="peragrap"> A private space to store notes, links, and learning summaries — designed to help you think clearly, connect ideas, and turn learning into long-term knowledge.</p>
                 <div class="hero-button">
-                    <button class="btn">Start Building Your Vault</button>
-                    <button class="btn2">See How It Works</button>
+                    <button class="btn">Start Building Your Vault <img src="./assets/ArrowRight.png" alt="arrow"> </button>
+                    <button class="btn2"><i class="fa-solid fa-play"></i>  See How It Works</button>
                 </div>
                 </div>
             </div>
@@ -393,6 +442,18 @@
             </div>
           </div>
         </section>
+
+         <section class="ready-clear-section">
+          <div>
+          <h2>Ready To Think More Clearly?</h2>
+           <p>Join thousands of learners who are building their personal knowledge vaults.Start free, no credit card required.</p>
+           <div class="redy-btn">
+             <button class="btn">Get Early Access <img src="./assets/ArrowRight.png" alt="arrow"></button>
+           </div>
+          
+           <p>Free during early access • No credit card needed</p>
+          </div>
+         </section>
 
     </main>
     <footer></footer>
